@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RandomActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generador aleatorio de N°"
+            android:textSize="25dp"
+            android:paddingTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextRangoMenor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rango Menor" />
+
+        <EditText
+            android:id="@+id/editTextRangoMayor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rango Mayor" />
+
+        <Button
+            android:id="@+id/buttonSortear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:text="Sortear" />
+
+        <TextView
+            android:id="@+id/textViewResultadoRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número aleatorio"
+            android:paddingTop="16dp"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
