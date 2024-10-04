@@ -5,32 +5,33 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFEB3B"
     tools:context=".MainActivity">
 
-    <!-- LinearLayout con distribución vertical -->
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- TextView en el tope superior -->
+
         <TextView
             android:id="@+id/textview_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="top"
             android:text="Edison Javier Prado Núñez"
-            android:textSize="18sp"
-            android:layout_gravity="top" />
+            android:textSize="18sp" />
 
-        <!-- Espacio para centrar los botones en el centro -->
+
         <Space
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <!-- Botón para Calculadora IMC -->
+
         <Button
             android:id="@+id/button_imc"
             android:layout_width="wrap_content"
@@ -38,28 +39,28 @@
             android:backgroundTint="#00BCD4"
             android:text="Calculadora IMC" />
 
-        <!-- Botón para Generador Aleatorio -->
+
         <Button
             android:id="@+id/button_random"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Generador Aleatorio"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:text="Generador Aleatorio" />
 
-        <!-- Espacio para centrar los botones en el centro -->
+
         <Space
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <!-- TextView en el tope inferior -->
+        
         <TextView
             android:id="@+id/textview_bottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
             android:text="Ingeniería en Informática 2024"
-            android:textSize="16sp"
-            android:layout_gravity="bottom" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 
